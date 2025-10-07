@@ -8,4 +8,5 @@ urlpatterns = [
     # This is the line that must exist and match 'api/register/'
     path('api/register/', views.register_user, name='register_api'),
     # ... any other URLs for the registration app ...
+    path('api/users/', views.list_user, name='list_users'),  # New endpoint for listing users
 ]
